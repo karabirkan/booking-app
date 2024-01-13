@@ -92,7 +92,7 @@ const Register = () => {
           {...register("confirmPassword", {
             validate: (value) => {
               if (!value) {
-                return "This is field is required";
+                return "This field is required";
               } else if (watch("password") != value) {
                 return "Your passwords do not match";
               }
